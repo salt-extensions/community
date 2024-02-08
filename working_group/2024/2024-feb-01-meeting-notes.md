@@ -12,7 +12,7 @@ Watch the YouTube recording of the meeting: https://www.youtube.com/watch?v=1ZKq
   - Decision: We will keep meeting notes in markdown in a community repository.
   - Action: Nick will create the community repository and Alyssa will post the meeting notes.
 - **Publishing packages to PyPi**
-  - We had a discussion about publishing packages to PyPi. Jamie wanted to ensure there is redundancy among the PyPi maintainers to ensure consistent access is maintained.
+  - We had a discussion about publishing packages to PyPi. Jaimie wanted to ensure there is redundancy among the PyPi maintainers to ensure consistent access is maintained.
   - Everything is published by [saltext-community](https://pypi.org/user/saltext-community/) in PyPi. Nick has the credentials in his company account and can add others if needed.
 - **Companies that host their own extensions**
   - We discussed how to handle extensions that are hosted and maintained by a third party. How do we ensure that we don't have inaccessible packages or repositories?
