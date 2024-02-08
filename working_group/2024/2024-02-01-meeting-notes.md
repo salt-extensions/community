@@ -6,7 +6,7 @@ Watch the YouTube recording of the meeting: https://www.youtube.com/watch?v=1ZKq
 
 ## Agenda and notes
 
-* **Introductions** - Tell us about yourself, where you're at in the world, how you use Salt and your experience level, why you are interested in this group, and what you hope to get out of it.
+- **Introductions** - Tell us about yourself, where you're at in the world, how you use Salt and your experience level, why you are interested in this group, and what you hope to get out of it.
 - **How we work**
   - Decision: We will record the meeting and let it be posted on YouTube.
   - Decision: We will keep meeting notes in markdown in a community repository.
