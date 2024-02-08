@@ -19,7 +19,7 @@ Watch the YouTube recording of the meeting: https://www.youtube.com/watch?v=1ZKq
   - Decision: If you are a company, that's different than just being an individual because it's more likely to be maintained. We can create a placeholder or a clone in the `salt-extensions` repository.
   - Who can access and publish to enable extensions discovery?
   - Let's start with a minimum viable product such as an awesome list or README list to start. Then we can iterate or build more sophisticated discovery mechanisms from there. If working group members feel motivated to come up with a better solution, we can let them work on it as part of a larger initiative in this working group.
-  - Action: Nick will create an awesome repository" because I think I did sign up for that task
+  - Action: Nick will create an awesome repository
   - Open questions we still need to resolve:
     - For community maintained extensions, how will people be able to see the status of an extensions, such as when it breaks?
 - **Redirecting from previous extensions**
