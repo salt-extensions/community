@@ -1,4 +1,8 @@
-# Salt Extensions working group
+# community
+
+Salt Extensions Community Repository for Meeting Notes, Docs, etc.
+
+## Salt Extensions working group
 
 The Salt Extensions working group is the place to go if you would like to help
 create, improve, and maintain a Salt extension. We'll collaborate as peers to

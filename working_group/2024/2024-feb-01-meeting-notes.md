@@ -9,16 +9,17 @@ Watch the YouTube recording of the meeting: https://www.youtube.com/watch?v=1ZKq
 * **Introductions** - Tell us about yourself, where you're at in the world, how you use Salt and your experience level, why you are interested in this group, and what you hope to get out of it.
 - **How we work**
   - Decision: We will record the meeting and let it be posted on YouTube.
-  - Decision: We will keep meeting notes in MD in a community repository.
+  - Decision: We will keep meeting notes in markdown in a community repository.
   - Action: Nick will create the community repository and Alyssa will post the meeting notes.
 - **Publishing packages to PyPi**
-  - We had a discussion about publishing packages to PyPi. Jaimie wanted to ensure there is redundancy among the PyPi maintainers to ensure consistent access is maintained.
-  - Everything is published by `salt-extensions-community` in PyPi. Nick has the credentials in his company account and can add others if needed.
+  - We had a discussion about publishing packages to PyPi. Jamie wanted to ensure there is redundancy among the PyPi maintainers to ensure consistent access is maintained.
+  - Everything is published by [saltext-community](https://pypi.org/user/saltext-community/) in PyPi. Nick has the credentials in his company account and can add others if needed.
 - **Companies that host their own extensions**
   - We discussed how to handle extensions that are hosted and maintained by a third party. How do we ensure that we don't have inaccessible packages or repositories?
   - Decision: If you are a company, that's different than just being an individual because it's more likely to be maintained. We can create a placeholder or a clone in the `salt-extensions` repository.
   - Who can access and publish to enable extensions discovery?
   - Let's start with a minimum viable product such as an awesome list or README list to start. Then we can iterate or build more sophisticated discovery mechanisms from there. If working group members feel motivated to come up with a better solution, we can let them work on it as part of a larger initiative in this working group.
+  - Action: Nick will create an awesome repository" because I think I did sign up for that task
   - Open questions we still need to resolve:
     - For community maintained extensions, how will people be able to see the status of an extensions, such as when it breaks?
 - **Redirecting from previous extensions**
