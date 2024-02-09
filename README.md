@@ -28,4 +28,4 @@ To join the Salt Extensions working group:
 Zoom links.
 * Join the `#salt-extensions` channel on the
 [Salt Community Slack](https://saltstackcommunity.slack.com).
-* See the `meeting-notes` folder to read past working group meeting notes.
+* See the `working_group` folder to read past working group meeting notes.
