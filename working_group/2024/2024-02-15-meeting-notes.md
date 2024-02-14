@@ -7,6 +7,8 @@ Watch the YouTube recording of the meeting on the Salt Extensions playlist: http
 ## Agenda and notes
 
 - **Welcome any newcomers**
+- **Announcements**
+  - New repository for meeting notes: https://github.com/salt-extensions/community
 - **Feedback to the core Salt team about the modules**
   - Let's review the list of modules that will be core, core extended, and community supported. See [this pull request](https://github.com/saltstack/salt/pull/65971) and [the great module migration repo](https://github.com/saltstack/great-module-migration).
   - Any concerns about this list that we need to raise with the core Salt team? (Be aware that the core team is willing to listen to feedback, especially from trusted community members who make a good argument and are willing to help pull their weight in the community.)
