@@ -12,10 +12,10 @@ Watch the YouTube recording of the meeting on the Salt Extensions playlist: http
 - **Feedback to the core Salt team about the modules**
   - Let's review the list of modules that will be core, core extended, and community supported. See [this pull request](https://github.com/saltstack/salt/pull/65971) and [the great module migration repo](https://github.com/saltstack/great-module-migration).
   - Any concerns about this list that we need to raise with the core Salt team? (Be aware that the core team is willing to listen to feedback, especially from trusted community members who make a good argument and are willing to help pull their weight in the community.)
-    - We maybe need a clearer explanation of the general principles behind how the core team decides why certain extensions are put into each category. From what we can tell, it seems that:
-      - **Core** is deliberately very small and includes only what is necessary for the general functioning of Salt.
-      - **Core extensions** are pieces of code that are business critical from a Broadcom perspective and the core team will continue to maintain these extensions from a code quality and security perspective.
-      - **Community extensions** are everything else and they will fall to the community to maintain.
+  - We maybe need a clearer explanation of the general principles behind how the core team decides why certain extensions are put into each category. From what we can tell, it seems that:
+    - **Core** is deliberately very small and includes only what is necessary for the general functioning of Salt.
+    - **Core extensions** are pieces of code that are business critical from a Broadcom perspective and the core team will continue to maintain these extensions from a code quality and security perspective.
+    - **Community extensions** are everything else and they will fall to the community to maintain.
 - **Concerns about extensions**
   - The group identified a few main concerns:
     - **Installation** - How does an extension get into the user's system so that the can use it?
