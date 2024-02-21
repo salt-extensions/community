@@ -2,7 +2,7 @@
 
 ## Meeting recording
 
-Watch the YouTube recording of the meeting: https://www.youtube.com/watch?v=1ZKq6ohi8Ko&list=PL9svBjLDUl_-gyXj2lDYomI8keXtbMqUl
+Watch the YouTube recording of the meeting on the Salt Extensions playlist: https://www.youtube.com/playlist?list=PL9svBjLDUl_-gyXj2lDYomI8keXtbMqUl
 
 ## Agenda and notes
 
