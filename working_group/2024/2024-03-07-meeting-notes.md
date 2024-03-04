@@ -11,6 +11,9 @@ Watch the YouTube recording of the meeting on the Salt Extensions playlist: http
   - Reminder that our new meeting cadence is the 1st and 3rd Thursday. See the [Salt Project community calendar](https://saltproject.io/calendar/) for specific dates and the Zoom link.
 - **Update from Alyssa from engineering**
   - After our last meeting, Alyssa took some of the working group's concerns to the engineers as well as the professional services and support teams at Broadcom for feedback. She'll share some of the outcomes of those discussions with the group.
+- **Update on salt-pip bugfix**
+  - Recap from our previous meeting: Installation of Salt extensions has a blocker because you can't install more than one extension at a time with salt pip. Bootstrap would be the most effective installation method, but it could cause a race condition when you run minions on a highstate.
+  - See this [merged relenv PR](https://github.com/saltstack/relenv/pull/173)
 - **Feedback to the core Salt team about the modules**
   - Any concerns about this list that we need to raise with the core Salt team?
 - **Discussion about Max's proposal to keep centralized documentation**
