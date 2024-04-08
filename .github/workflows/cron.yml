@@ -2,8 +2,7 @@ name: Check for New Repositories
 
 on:
     schedule:
-        - cron: '30 21 * * *'  # Runs at 3 am Eastern Time (7 am UTC)
-        # - cron: '0 7 * * *'  # Runs at 3 am Eastern Time (7 am UTC)
+        - cron: '0 7 * * *'  # Runs at 7 am UTC
 
 jobs:
   check_for_new_repos:
