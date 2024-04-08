@@ -1,0 +1,197 @@
+name: Check for New Repositories
+
+on:
+    schedule:
+        - cron: '30 21 * * *'  # Runs at 3 am Eastern Time (7 am UTC)
+        # - cron: '0 7 * * *'  # Runs at 3 am Eastern Time (7 am UTC)
+
+jobs:
+  check_for_new_repos:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Extract intersphinx_mapping
+        id: extract_mapping
+        run: |
+          filtered_mapping=$(python -c '
+          with open("source/conf.py", "r") as f:
+            conf_content = f.read()
+            
+          # Find the start and end of the intersphinx_mapping block
+          start_idx = conf_content.find("intersphinx_mapping")
+          end_idx = conf_content.find("}", start_idx)
+          
+          # Extract the block
+          mapping_block = conf_content[start_idx:end_idx+1]
+          
+          # Find the start and end of the dictionary
+          start_idx = mapping_block.find("{")
+          end_idx = mapping_block.rfind("}")
+
+          # Extract the dictionary part
+          dictionary_string = mapping_block[start_idx:end_idx + 1]
+
+          # Parse the dictionary string
+          mapping_dict = eval(dictionary_string)
+
+          # Extract keys from the dictionary
+          filtered_mapping = list(mapping_dict.keys())
+          print(filtered_mapping)
+          ')
+          echo "::set-output name=filtered_mapping::$filtered_mapping"
+
+      
+      - name: List Repositories
+        id: list_repos
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const response = await github.repos.listForOrg({
+              org: 'salt-extensions',
+              per_page: 100
+            });
+            return response.data.map(repo => repo.name);
+
+      - name: Debug Intersphinx Mapping
+        run: |
+          echo "Intersphinx Mapping: ${{ steps.extract_mapping.outputs.filtered_mapping }}"
+      
+      - name: Debug Repos
+        run: |
+          echo "Repos: ${{ steps.list_repos.outputs.result }}"    
+
+      - name: Compare Repositories
+        id: compare_repos
+        run: |
+
+          # Define the string
+          string=${{ steps.list_repos.outputs.result }}
+
+          # Remove leading and trailing square brackets
+          string="${string#"["}"
+          string="${string%"]"}"
+
+          # Replace commas with spaces
+          string="${string//,/ }"
+
+          # Convert the string to an array
+          declare -a array=($string)
+
+          # Print the array for testing
+          declare -p array
+
+          # Loop through the array
+          for repo in "${repos[@]}"; do
+              # Check if the repo is missing from the filtered mapping
+              if ! echo "${{ steps.extract_mapping.outputs.filtered_mapping }}" | grep -q "$repo"; then
+                  echo "Repository $repo is missing from Intersphinx Mapping."
+              fi
+          done
+    
+      - name: Add Missing Repository
+        id: add_repos
+        if: steps.extract_mapping.outputs.filtered_mapping
+        run: | 
+          # Define the string
+          string=${{ steps.list_repos.outputs.result }}
+
+          # Remove leading and trailing square brackets
+          string="${string#"["}"
+          string="${string%"]"}"
+
+          # Replace commas with spaces
+          string="${string//,/ }"
+
+          # Convert the string to an array
+          declare -a repos=($string)
+
+          # Loop through the array
+          for repo in "${repos[@]}"; do
+              # Check if the repo is missing from the filtered mapping
+              if ! echo "${{ steps.extract_mapping.outputs.filtered_mapping }}" | grep -q "$repo"; then
+                  echo "Repository $repo is missing from Intersphinx Mapping."
+
+                  # Add missing repository to conf.py
+                  # TODO: url needs to be env var
+                  awk -v repo_name="$repo" -v repo_url="https://github.com/saltstack/salt" '
+                    # Initialize a variable to track if the block is found
+                    BEGIN { found = 0 } 
+                    # If we find the intersphinx_mapping block
+                    /intersphinx_mapping/ { 
+                        # Set found flag to true
+                        found = 1            
+                        print
+                        # Move to the next line
+                        next     
+                    }
+                    # If the closing brace of the block is found
+                    found && /^}/ {  
+                        print "    \"" repo_name "\": (\"" repo_url "\", None),"
+                        # Reset the found flag
+                        found = 0 
+                    }
+                    # Print all lines
+                    { print } 
+                  ' source/conf.py > source/temp.py && mv source/temp.py source/conf.py
+                  # Accumulate the repository name
+                  repo_names+="$repo "
+              fi
+          done
+      
+          # Output the accumulated repository names
+          echo "::set-output name=repo_names::$repo_names"
+      
+      - name: Update RST File
+        run: |
+          # Define the file path and code to insert
+          rst_file="source/extensions.rst"
+          repo_names="${{ steps.add_repos.outputs.repo_names }}"
+          
+          # Initialize an empty variable to accumulate extension entries
+          extensions=""
+      
+          # Loop through the repository names to generate extension entries
+          for repo_name in $repo_names; do
+            extensions+="\n- **${repo_name} Extension**\\n\\n\tDescription of the ${repo_name} extension."
+          done
+      
+          # Insert the code after the introductory text
+          awk -v code="$extensions" '
+            BEGIN { 
+              RS = ""; 
+              ORS = "\n\n"; 
+              FS = "\n"; 
+            } 
+            { 
+              if ($0 ~ /Welcome to the Salt Extensions page\./) 
+                print $0 "\n" code; 
+              else 
+                print $0; 
+            }' "$rst_file" > temp_file && mv temp_file "$rst_file"
+        
+      - name: Commit changes
+        run: |
+          git config --global user.email "github-actions@example.com"
+          git config --global user.name "GitHub Actions"
+          git add source/conf.py
+          git commit -m "Update intersphinx_mapping in conf.py"
+          
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.TOKEN }} #TODO: make sure github token is in secrets
+          branch: update-mapping
+          base: main
+          title: Update intersphinx_mapping in conf.py
+          body: |
+            This PR updates the intersphinx_mapping in conf.py file to include missing repositories.
+            Please review and merge.
+
