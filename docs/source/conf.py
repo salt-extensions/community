@@ -48,6 +48,11 @@ extensions = [
     "sphinx_inline_tabs",
 ]
 
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
+
 myst_enable_extensions = [
     "colon_fence",
     "deflist",

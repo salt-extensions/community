@@ -7,6 +7,7 @@ This is the index page.
    :maxdepth: 2
 
    extensions
+   meeting-notes
 
 Indices and tables
 ==================
