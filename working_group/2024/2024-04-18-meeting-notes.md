@@ -14,8 +14,9 @@ https://www.youtube.com/playlist?list=PL9svBjLDUl_-gyXj2lDYomI8keXtbMqUl
 - **Welcome any newcomers**
 - **Announcements**
   - Open Hour is today!
+  - The Great Module Migration got merged: https://github.com/saltstack/salt/pull/65971
 - **Recap from last meeting**
-  - Any updates with Meghann's demo?
+  - Any updates with Meghann's demos
 - **Brainstormining initiatives**
   - Let's talk about some concrete projects we can work on to make the transition to Salt extensions easier.
     - What are the biggest friction points with Salt extensions today and what can we do to make it better?
