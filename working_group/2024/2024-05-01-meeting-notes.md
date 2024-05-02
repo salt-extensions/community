@@ -13,7 +13,13 @@ https://www.youtube.com/playlist?list=PL9svBjLDUl_-gyXj2lDYomI8keXtbMqUl
 
 - **Welcome any newcomers**
 - **AMA about unit testing with Pedro**
-  - In our previous meeting, we talked about how writing unit tests is a major impediment to contribution right now. In today's meeting Pedro will be available to ask questions about the testing suite and help clear up any confusion. Come prepared with your questions!
+  - It turns out that Pedro wasn't able to make it today, so we'll reschedule this session, most likely for next time.
+- **Recap from last week**
+  - In our last meeting, we talked about Max Arnold's proposal for adding metadata structure files to the extensions. See https://github.com/max-arnold/salt-extensions-metadata/
+  - The main debate was over whether to keep centralized metadata or distributed metadata (or a combo of both). Did that resolve? Any additional thoughts?
+- **Module documentation quality project**
+  - Alyssa worked for awhile on a module documentation quality project. See https://saltstack.gitlab.io/open/docs/docs-hub/topics/module-doc-standards/index.html
+  - She can describe that project and talk about whether it has applicability for the extensions project.
 
 ## Next steps
 
