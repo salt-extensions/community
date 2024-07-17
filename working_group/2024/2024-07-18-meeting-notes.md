@@ -1,4 +1,4 @@
-# 2024 April 16 - Meeting notes
+# 2024 July 18 - Meeting notes
 
 ## Attendees
 
