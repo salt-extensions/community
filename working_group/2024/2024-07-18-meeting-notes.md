@@ -13,8 +13,10 @@ https://www.youtube.com/playlist?list=PL9svBjLDUl_-gyXj2lDYomI8keXtbMqUl
 
 - **Welcome any newcomers**
 - Today's agenda is: We're making a change in working group leadership.
+- Which process should people (be able to) follow to include a fresh extension (not a ported one) into the org?
+- Where are we in the process of module migration? Is anyone still actually working on porting modules? Also: How can we minimize friction in this process and most effectively prioritize work? Context: ⁠salt-extensions⁠ [TLDR: Automation mostly works fine from my experience with saltext-vault and saltext-pushover, awareness/documentation is lacking, possibly interest as well]
+- Anything that can be done to ensure the organization stays healthy in the absence of Nick?
 - Discussion of next steps with this working group.
-
 
 ## Next steps
 
