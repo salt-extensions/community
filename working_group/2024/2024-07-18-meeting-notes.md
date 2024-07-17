@@ -16,6 +16,8 @@ https://www.youtube.com/playlist?list=PL9svBjLDUl_-gyXj2lDYomI8keXtbMqUl
 - Which process should people (be able to) follow to include a fresh extension (not a ported one) into the org?
 - Where are we in the process of module migration? Is anyone still actually working on porting modules? Also: How can we minimize friction in this process and most effectively prioritize work? [TLDR: Automation mostly works fine from my experience with saltext-vault and saltext-pushover, awareness/documentation is lacking, possibly interest as well]
 - Anything that can be done to ensure the organization stays healthy in the absence of Nick?
+- Should the `salt-extension` tool be retired in favor of the Copier template? There being two tools can cause confusion (https://github.com/saltstack/salt-extension/pull/49#issuecomment-2155450876) Context: https://github.com/saltstack/salt-extension/pull/45#issuecomment-1919464696
+
 - Discussion of next steps with this working group.
 
 ## Next steps
