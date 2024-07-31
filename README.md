@@ -12,11 +12,11 @@ documentation.
 
 Come talk to the Salt documentation working group by joining the
 `#salt-extensions` channel on the
-[Salt Community Slack](https://saltstackcommunity.slack.com).
+[Salt Extensions](https://discord.com/channels/1200072194781368340/1208165123240370197).
 
 The current working group captains are
 [Nicholas Hughes](https://github.com/nicholasmhughes) and
-[Alyssa Rock](https://github.com/barbaricyawps).
+[David Murphy](https://github.com/dmurphy18).
 
 
 ## Join the Salt Extensions working group
@@ -27,5 +27,5 @@ To join the Salt Extensions working group:
 [community calendar](https://saltproject.io/calendar/) for meeting times and
 Zoom links.
 * Join the `#salt-extensions` channel on the
-[Salt Community Slack](https://saltstackcommunity.slack.com).
+[Salt Extensions](https://discord.com/channels/1200072194781368340/1208165123240370197).
 * See the `working_group` folder to read past working group meeting notes.
