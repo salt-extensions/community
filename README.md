@@ -10,8 +10,8 @@ help ensure your Salt extensions well-designed and easy to use. It's a great
 opportunity to network while also skilling up on Salt, Python, and module
 documentation.
 
-Come talk to the Salt documentation working group by joining the
-`#salt-extensions` channel on the
+Come talk to the Salt Extensions working group by joining the
+`#salt-extensions` channel on the Discord Server
 [Salt Extensions](https://discord.com/channels/1200072194781368340/1208165123240370197).
 
 The current working group captains are
