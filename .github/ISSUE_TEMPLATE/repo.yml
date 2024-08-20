@@ -1,0 +1,85 @@
+---
+name: Repo request
+description: Request a repository inside the `salt-extensions` organization for your project.
+title: "[Repo request]: "
+labels: [repo]
+
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Welcome to the Salt extensions organization!
+        We're glad you want to host with us.
+
+  - type: dropdown
+    id: project_type
+    attributes:
+      label: Source of the code
+      description: Where do the modules originate from?
+      options:
+        - Salt core (migration)
+        - New extension
+    validations:
+      required: true
+
+  - type: input
+    id: project_name
+    attributes:
+      label: Project name
+      description: Tell us the name of the repository you're applying for.
+      placeholder: saltext-vault
+    validations:
+      required: true
+
+  - type: input
+    id: repo_url
+    attributes:
+      label: Repository URL
+      description: Where can we check out your Salt extension project?
+      placeholder: https://github.com/foo/saltext-bar
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: project_info
+    attributes:
+      label: Project information
+      description: >-
+        Please provide some basic information about your project
+      options:
+        - label: Based on Copier template
+        - label: Test suite present & passing
+        - label: Documentation present
+        - label: Already released elsewhere
+
+  - type: checkboxes
+    id: migration_info
+    attributes:
+      label: Migration information
+      description: >-
+        If you migrated modules from Salt core, please provide
+        some extra information
+      options:
+        - label: Commit history preserved
+        - label: Code is equivalent to the core modules
+
+  - type: input
+    id: discord_user
+    attributes:
+      label: Discord username
+      description: Tell us your username on the Salt community discord (optional)
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional information
+      description: >-
+        Tell us more about yourself or your project (optional)
+
+  - type: markdown
+    attributes:
+      value: >-
+        **Thanks for taking the time to fill out this form!**
+
+
+        We'll get back to you as soon as possible.
