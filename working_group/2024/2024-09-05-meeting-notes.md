@@ -12,11 +12,16 @@ Watch the YouTube recording of the meeting on the Salt Extensions playlist: http
 - **Announcements**
 
 - **salt-extension-copier improvements**
+    - Writeup of Saltext work GIST https://gist.github.com/lkubb/b29760f2b954faddf78e6e7d1da197a7
 
 - **Dicussion of Community PRs?**
     - ***Add repo request issue template*** https://github.com/salt-extensions/community/pull/15
     - ***Templates*** https://github.com/salt-extensions/community/pull/6
     - ***MVP of Central Docs*** https://github.com/salt-extensions/community/pull/5
+
+- **Discussion of tools**
+    - ruff
+    - uv
 
 - **Discussion of next steps with this working group.**
 
