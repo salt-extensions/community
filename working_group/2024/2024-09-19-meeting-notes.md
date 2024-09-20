@@ -1,11 +1,16 @@
 # 2024 September 19 - Meeting notes
 
 ## Attendees
+    - Melissa Strong
+    - Dafydd
+    - Shane Lee
+    - Max Arnold
+    - David Murphy
 
 ## Meeting recording
 
 Watch the YouTube recording of the meeting on the Salt Extensions playlist: https://www.youtube.com/playlist?list=PL9svBjLDUl_-gyXj2lDYomI8keXtbMqUl
-Video from Sept. 5th meeting still to be uploaded to youtube.
+Video from Sept. 5th and 19th meetings still to be uploaded to youtube.
 
 ## Agenda and notes
 
@@ -20,6 +25,9 @@ Video from Sept. 5th meeting still to be uploaded to youtube.
 
 - **Discussion of GitHub Actions with this working group.**
     - Central Artifacts - use these workflows to perform all actions ?
+        - These should be ignored and preferrence given to those provided by copier for GitHub Actions.
+        - Max took as Action Item to research - release actions available from / by copier
+        - Note mention of helpers for GitHub Actions from Jeanluc in copier.
 
 - **Answers for items raised in last meeting with this working group.**
     - **Issue Tracking**
@@ -36,6 +44,10 @@ Video from Sept. 5th meeting still to be uploaded to youtube.
             - Sent email but no reply to date.
 
 - **Discussion of next steps with this working group.**
+    - With regard to Trust Publishing, and the ability to publish to PyPI, Nick currently has charge of that (ownership) but MIA,
+        - Max suggested Broadcom taking over ownership / maintainence of that ability
+        - David suggested a bot own that which maintainers have access to, peferring to keep this all community owned and run
+    - For extensions from scratch, using __copier init__ provides ability to provide framework for scratch extension which can be filled in with details of the extension.
 
 
 ## Next steps
