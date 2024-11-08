@@ -1,6 +1,11 @@
 # 2024 Novemeber 07 - Meeting notes
 
 ## Attendees
+    - Jesper
+    - blu-blue
+    - Melissa Strong
+    - Shane Lee
+    - David Murphy
 
 ## Meeting recording
 
@@ -23,11 +28,13 @@ Video from Sept. 5th and 19th, and Oct 3rd and Oct 17th meetings still to be upl
     - Salt infrastructure changes to packaging.broadcom.com
 
 - **Discussion of next steps with this working group.**
+    - Disscussion of adding blu-blue's salt extension for zypper packages
+    - Discussion of base level Python 3.10, and there is work on support for Python 3.11, 3.12 and 3.13 in relenv, but not ready for release yet.
 
 
 ## Next steps
 
-- Next meeting is November 07th.
+- Next meeting is November 21st.
 
 ## Notable links
 
