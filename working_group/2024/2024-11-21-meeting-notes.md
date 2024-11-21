@@ -1,6 +1,9 @@
 # 2024 Novemeber 21 - Meeting notes
 
 ## Attendees
+    - Melissa Strong
+    - Max Arnold
+    - David Murphy
 
 ## Meeting recording
 
@@ -10,6 +13,7 @@ Video from Sept. 5th, 19th, Oct 3rd, Oct 17th, and Nov 7th meetings still to be 
 ## Agenda and notes
 
 - **Welcome any newcomers**
+
 - **Announcements**
 
 
