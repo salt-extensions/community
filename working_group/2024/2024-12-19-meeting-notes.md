@@ -1,6 +1,8 @@
 # 2024 December 19 - Meeting notes
 
 ## Attendees
+    - Shane Lee
+    - David Murphy
 
 ## Meeting recording
 
@@ -16,8 +18,10 @@ Video from Sept. 5th, 19th, Oct 3rd, Oct 17th, Nov 7th, Nov 21st and Dec 5th mee
 - **Meeting items for  discussion.**
     - David Murphy will be going on PTO till end of Jan after Christmas break, and Shane Lee from
       the Salt Team will run meeting in David's absence.
+    - Only Shane and David showed up, so terminated meeting after 15 minutes.
 
 - **Discussion of next steps with this working group.**
+    - Happy Christmas and New Year to all :D
 
 ## Next steps
 
