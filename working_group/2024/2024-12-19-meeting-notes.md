@@ -25,7 +25,7 @@ Video from Sept. 5th, 19th, Oct 3rd, Oct 17th, Nov 7th, Nov 21st and Dec 5th mee
 
 ## Next steps
 
-- Next meeting is January 2nd 2025.
+- Next meeting is January 16th 2025, Jan 2nd meeting cancelled due close to New Year.
 
 ## Notable links
 
