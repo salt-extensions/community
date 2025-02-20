@@ -1,6 +1,9 @@
 # 2025 February 20 - Meeting notes
 
 ## Attendees
+- Shane Lee
+- David I.
+- David Murphy
 
 ## Agenda and notes
 
@@ -9,6 +12,12 @@
 - **Announcements**
 
 - **Meeting items for  discussion.**
+- Discussed David I's work on boto3 salt-extension
+    - Looking to drop boto2 support given it is EOL.  The salt extension is essentially a rewrite given the amount of work being done.
+    - Discussed repo creations in salt-extensions and recommendation to create repository in private account, in
+      order to not lose work, and then it can be transfered to the salt-extensions repository when approved.
+    - Migration stategies to keep history, that is, using 3007 branch if files have not changed in master and
+      they might not be in the appropriate place in master.
 
 - **Discussion of next steps with this working group.**
 
