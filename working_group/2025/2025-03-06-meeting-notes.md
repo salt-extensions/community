@@ -1,6 +1,11 @@
 # 2025 March 06 - Meeting notes
 
 ## Attendees
+    - Melissa Strong
+    - Dafydd
+    - David I.
+    - David Murphy
+    - Shane Lee
 
 ## Agenda and notes
 
@@ -8,7 +13,10 @@
 
 - **Announcements**
 
-- **Meeting items for  discussion.**
+- **Meeting items for discussion.**
+    - Discussed Salt Team move from Tanzu to VCF division at Broadcom
+        - Benefit of move, will be VCF pushing for 3008 and salt-extensions to reduce footprint of Salt being
+          used by VCF software
 
 - **Discussion of next steps with this working group.**
 
