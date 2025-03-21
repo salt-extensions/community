@@ -1,6 +1,8 @@
 # 2025 March 20 - Meeting notes
 
 ## Attendees
+    - Shane Lee
+    - David Murphy
 
 ## Agenda and notes
 
@@ -9,6 +11,7 @@
 - **Announcements**
 
 - **Meeting items for discussion.**
+    - Only Salt Core Team members showed up for the meeting.
 
 - **Discussion of next steps with this working group.**
 
