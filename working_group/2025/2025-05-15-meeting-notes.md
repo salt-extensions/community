@@ -1,10 +1,11 @@
-# 2025 April 17 - Meeting notes
+# 2025 May 15 - Meeting notes
 
 ## Attendees
   - Shane Lee (@twangboy)
-  - Alexander Graul
-  - Daffyd
+  - djivey
+  - dafyddj
   - Max Arnold
+  - Melissa Strong
 
 ## Agenda and notes
 
@@ -15,23 +16,27 @@
     https://saltproject.io/blog/2025-05-14-new-release-salt-3007-2/
 
 ## Projects and Status
-
+- Installation: Seems to be working
+- Copier template: Major work is done
+- Testing Infra: Major work is done
 
 ## Meeting items for discussion
-- Salt promised to remove Salt Supported modules to Salt extensions. Since that
-  is no longer happening, we need to let people know
-  - Salt-Users group (google groups)
-  - Salt-Announce Group (google groups)
-  - Discord Channels
-  - Blog
-  - Salt Announce Mailing List
-- Copier script is well documented
-  - Alexander reported an issue with it, he is discussing that on Discord
-- Modules that were removed have left some fragments (utils)
-- Modules that should maybe be brought back into core
+- djivey is working on a Salt-Extension for the Boto Modules. Migrating to
+  Boto3. Combining AWS and Boto3 salt utils so there is a single util for
+  aws authentication. Also including the AWS cloud provider as part of the
+  boto extension. Call the extension salt-aws or something instead of boto.
+- Max Arnold asked about when 3008 would be released. We're looking at fall of
+  2025 as of now. I'll follow Dwoz.
+- salt extensions work on 3007 and seem to take priority over existing core
+  modules. What is the difference in how things are imported with a salt
+  extension?:
+  core utils: import salt.utils.<module>
+  ext utils:  import saltext.<extname>.utils.<module>
+- daffydj - How will the move to 3008 effect regular users. May not be an
+  immediate concern. We intend to extend 3006.x LTS support until 3008 is
+  stable and all issues worked out.
 
 ## Action Items
-- Shane: Follow up with JeanLuc about the copier template... is it done?
 - Shane: Follow up with Salt Core team about removing fragments, bring modules
   back in to Salt core
 - Shane: Creating Stubs in Salt Docs for removed code
