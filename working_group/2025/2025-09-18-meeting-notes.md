@@ -27,7 +27,7 @@
 - There are many requests for repos to be created. Need to review those issues
   and create repos.
 
-- Next meeting is Sep 18, 2025
+- Next meeting is Oct 16, 2025
 
 ## Notable links
 
