@@ -18,6 +18,8 @@
 ## Meeting items for discussion
 - Kudos from Marek for the good work in getting the workflows set up for
   releases and changelogs. It has made releases easy.
+- 3008 is being worked on. Please rebase your PRs and resolve merge
+  conflicts.
 
 ## Action Items
 - Next meeting is April 16, 2026
